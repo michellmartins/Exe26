@@ -1,6 +1,104 @@
 /*Versao para todas as outras midias*/
 
+/*Typical Device BreakPoints
+------------------------------
+
+Pequenas Telas: até 600px
+Celular: de 601px até 768px
+Tablet : 769px até 992px
+Grandes telas : acima de 1200px
+*/
+
+
+
 
 @media print {
+    body{
+        background-image: url(../imagens/back-print.jpg);
+       
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+
+    main {
+        border: 2px solid black;
+        width:90%;
+    }
+
+    main::after {
+        text-decoration: overline;
+        content: "Esse site foi desenvolcido pelo site https://michellmartins.netlify.app/";
+    }
+
+    h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+#phone {display: none;}
+#tablet {display: none;}
+#print {display:block}
+#pc {display: none;}
+#tv {display:none}
+   
+
     
 }
+
+
+
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+body {
+    background-image: url(../imagens/back-tablet.jpg);
+}
+
+#phone {display: none;}
+#tablet {display: block;}
+#print {display:none}
+#pc {display: none;}
+#tv {display:none}
+    
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    
+    body{
+   background-image: url(../imagens/back-pc.jpg) ;   
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display:none}
+    #pc {display: block;}
+    #tv {display:none}
+}
+    }
+    
+    
+
+
+@media screen and (min-width:1200px) {
+  
+    body{
+
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display:none}
+    #pc {display: none;}
+    #tv {display:block;}
+        
+    }
+
+
+    
+
+
