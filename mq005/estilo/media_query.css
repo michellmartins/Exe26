@@ -8,23 +8,28 @@ Celular: de 601px até 768px
 Tablet : 769px até 992px
 Grandes telas : acima de 1200px
 */
-/*
+
 
 @media screen and (min-width:768px) {
 
-#burguer{
+    #burguer {
+        display:none;
+    }
 
-    display:none
+    menu {
+        display: block;
+        
+    }
 
-}
+    a {
+        display: inline-block;
+    }
 
-#itens {
-     
-    display: block;
+    main {
+        width: 768px;
+    }
 
-}
-}
+    
 
-menu > ul > li{
-    display: inline-block;
+
 }
